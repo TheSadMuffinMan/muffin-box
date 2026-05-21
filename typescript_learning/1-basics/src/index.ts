@@ -8,6 +8,7 @@ Compile with: `tsc`
 "Run" JS with: `node dist/index.js`
 
 The TS compiler is *smart*; it will heavily optimize your resultant JS code.
+TS Compiler options: npm tsc --init
 */
 
 
@@ -15,7 +16,7 @@ The TS compiler is *smart*; it will heavily optimize your resultant JS code.
 // console.log('Hello World.');
 
 
-/* 
+/*
 JS (and therefore TS) has several native types:
 - number
 - string
@@ -30,6 +31,8 @@ TS introduces a few new types:
 - never
 - enum
 - tuple
+
+JS/TS does **NOT** have chars; single characters are simply represented as strings of length one.
 */
 // let sales:number = 123_456_789; // Can remove `:number` section, compiler can infer data types. 
 // let course:string = 'TypeScript';
