@@ -62,13 +62,23 @@ Prevents this:
 
 
 /* FUNCTIONS
+`?` OPERATOR signifies that a parameter is optional, very cool.
+The `(taxYear || 2022)` portion supports the `?` operator by saying "if a taxYear is not provided, go with 2022".
+    - Video recommends giving the parameter a default value:
+                 ... (income:number, taxYear = 2022): ...
+*/
+// function calculateTax(income:number, taxYear?:number): number {
+//     if ((taxYear || 2022) < 2022) {
+//         return (income * 1.2);
+//     }
+//     else {
+//         return (income * 1.3);
+//     }
+// }
+
+// calculateTax(25_000)
+
+
+/* OBJECTS
 
 */
-function calculateTax(income:number): number {
-    if (income > 50_000) {
-        return (income * 1.2);
-    }
-    else {
-        return (income * 1.3);
-    }
-}
