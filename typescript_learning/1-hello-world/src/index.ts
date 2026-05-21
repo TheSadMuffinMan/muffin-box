@@ -20,10 +20,22 @@ TS introduces a few new types:
 - never
 - enum
 - tuple
+
+See commented section below.
 */
 
-let sales:number = 123_456_789; // Can remove `:number` section, compiler can infer data types. 
-let course:string = 'TypeScript';
-let is_published:boolean = false;
+// let sales:number = 123_456_789; // Can remove `:number` section, compiler can infer data types. 
+// let course:string = 'TypeScript';
+// let is_published:boolean = false;
 
-let level; // Type `any`: can represent any type of values. This feature removes all the benefits of TS, so use sparingly.
+// let level; // Type `any`: can represent any type of values. This feature removes all the benefits of TS, so use sparingly.
+
+/* ARRAYS
+TS arrays are DYNAMIC: the elements do not need to all be the same type.
+*/
+// let numbers:number[] = [1, 2, 3];
+// numbers.forEach(n => n.toString);
+
+/* TOUPLES
+x
+*/
