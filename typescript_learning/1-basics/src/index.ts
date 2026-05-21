@@ -113,5 +113,17 @@ Instead create a type alias.
 // }
 
 /* UNION TYPES
-
+Allowing two different types as a parameter.
 */
+function kgToLbs(weight:(number | string)): number {
+    // Narrowing
+    if (typeof weight === `number`) { // Compiler knows `weight` is a number.
+        // weight. shows all the number methods available.
+        return (weight * 2.2);
+    }
+    else {
+        // weight. shows all string methods available.
+        return (parseInt(weight) * 2.2);
+    }
+}
+console.log(kgToLbs('25kg'));
