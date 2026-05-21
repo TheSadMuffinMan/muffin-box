@@ -6,3 +6,7 @@ This repo is the Muffin Man's public-facing collection of computer science knowl
 - Pls hire me.
 
 **NO AI**. This repo is 100% organic.
+
+## Organization
+
+When there is more content here, I am planning on breaking topics down by general language skills, and then specific coding skills in each language (like searching a stream in C++, Python, TS, etc).
