@@ -1,11 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function isPalindrome(x) {
+    if (x < 0) {
+        return false;
+    }
     const xstr = x.toString();
-    const strlen = ((xstr.length) / 2);
-    for (let i = 0; i < strlen; i++) {
+    if (xstr.length == 1) {
+        return true;
+    }
+    const strlen = xstr.length;
+    for (let i = 0; i < (strlen / 2); i++) {
         let currChar = xstr.charAt(i);
-        if (currChar == xstr.charAt(strlen - i)) {
+        if (currChar == xstr.charAt(strlen - 1 - i)) {
             continue;
         }
         else {

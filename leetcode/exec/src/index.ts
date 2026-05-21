@@ -1,12 +1,15 @@
 function isPalindrome(x: number): boolean {
+    if (x < 0) { return false; } // Negative values.
+
     const xstr:string = x.toString();
+    if (xstr.length == 1) { return true; } // Single char values.
 
-    const strlen:number = ((xstr.length) / 2); // Only need to go through half of string to confirm palindrome. Smart!!
+    const strlen:number = xstr.length;
 
-    for (let i:number = 0; i < strlen; i++) {
+    for (let i:number = 0; i < (strlen / 2); i++) {
         let currChar = xstr.charAt(i);
 
-        if (currChar == xstr.charAt(strlen - i)) { continue; }
+        if (currChar == xstr.charAt(strlen - 1 - i)) { continue; }
         else {
             return false;
         }
@@ -35,7 +38,8 @@ for (let j:number = 0; j < testNums.length; j++ ) {
     }
 }
 
-// OR
-// for (const num of testNums) {
-//     isPalindrome(num);
-// }
+/*  OR
+for (const num of testNums) {
+    isPalindrome(num);
+}
+*/
