@@ -3,10 +3,15 @@ Info came from a YouTube video:
 https://www.youtube.com/watch?v=d56mG7DezGs&t=1631s
 */
 
+/*
+Compile with: `tsc`
+"Run" JS with: `node dist/index.js`
+
+The TS compiler is *smart*; it will heavily optimize your resultant JS code.
+*/
+
 // Basic console print:
 // console.log('Hello World.');
-
-// let age:number = 28; // 'age' is now a number. age = 'a'; Line doesn't work: "Type 'string' is not assignable to type 'number'." TS catches this error before compilation!
 
 /* 
 JS (and therefore TS) has several native types:
@@ -46,6 +51,12 @@ For this example, we want to assign a userId and name to data.
 */
 // let user:[number, string] = [2002, 'Muffins'];
 
-/* ENUMS
-x
+/* ENUMS (list of related constants)
+Prevents this:
+    const small = 1;
+    const medium = 2;
+    const large = 3;
 */
+// enum Size {Small = 1, Medium, Large}; // Medium == 2, Large == 3;
+// let mySize:Size = Size.Medium;
+// console.log(mySize);
