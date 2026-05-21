@@ -79,6 +79,19 @@ The `(taxYear || 2022)` portion supports the `?` operator by saying "if a taxYea
 // calculateTax(25_000)
 
 
-/* OBJECTS
-
+/* OBJECTS (basic)
+Objects are NOT dynamic like in JS.
+    `employee.name = "Muffins";` will not work.
+`readonly` basically makes a parameter const.
 */
+// let employee: {
+//     readonly id: number,
+//     name: string
+//     retire: (date: Date) => void
+// } = {
+//     id: 1,
+//     name: 'username',
+//     retire: (date:Date) => {
+//         console.log(date);
+//     }
+// };
