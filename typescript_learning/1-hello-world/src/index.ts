@@ -42,5 +42,10 @@ TS arrays are DYNAMIC: the elements do not need to all be the same type.
 // numbers.forEach(n => n.toString);
 
 /* TOUPLES
+For this example, we want to assign a userId and name to data.
+*/
+// let user:[number, string] = [2002, 'Muffins'];
+
+/* ENUMS
 x
 */
