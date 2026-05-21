@@ -1,7 +1,7 @@
 function isPalindrome(x: number): boolean {
     const xstr:string = x.toString();
 
-    const strlen:number = ((xstr.length) / 2); // Only need to go through half of string to confirm palindrome. Smart!!
+    const strlen:number = ((xstr.length) / 2);
 
     for (let i:number = 0; i < strlen; i++) {
         let currChar = xstr.charAt(i);
@@ -12,6 +12,5 @@ function isPalindrome(x: number): boolean {
         }
     }
 
-    // If we get to this point, `x` is a palindrome.
     return true;
 };
