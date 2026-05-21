@@ -10,8 +10,10 @@ Compile with: `tsc`
 The TS compiler is *smart*; it will heavily optimize your resultant JS code.
 */
 
+
 // Basic console print:
 // console.log('Hello World.');
+
 
 /* 
 JS (and therefore TS) has several native types:
@@ -21,24 +23,19 @@ JS (and therefore TS) has several native types:
 - null
 - undefined
 - object
-*/
 
-/*
 TS introduces a few new types:
 - any
 - unknown
 - never
 - enum
 - tuple
-
-See commented section below.
 */
-
 // let sales:number = 123_456_789; // Can remove `:number` section, compiler can infer data types. 
 // let course:string = 'TypeScript';
 // let is_published:boolean = false;
-
 // let level; // Type `any`: can represent any type of values. This feature removes all the benefits of TS, so use sparingly.
+
 
 /* ARRAYS
 TS arrays are DYNAMIC: the elements do not need to all be the same type.
@@ -46,10 +43,12 @@ TS arrays are DYNAMIC: the elements do not need to all be the same type.
 // let numbers:number[] = [1, 2, 3];
 // numbers.forEach(n => n.toString);
 
+
 /* TOUPLES
 For this example, we want to assign a userId and name to data.
 */
 // let user:[number, string] = [2002, 'Muffins'];
+
 
 /* ENUMS (list of related constants)
 Prevents this:
@@ -60,3 +59,11 @@ Prevents this:
 // enum Size {Small = 1, Medium, Large}; // Medium == 2, Large == 3;
 // let mySize:Size = Size.Medium;
 // console.log(mySize);
+
+
+/* FUNCTIONS
+
+*/
+function calculateTax(income:number): number {
+    return 0;
+}
