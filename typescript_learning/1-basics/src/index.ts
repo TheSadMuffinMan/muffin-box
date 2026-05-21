@@ -95,3 +95,23 @@ Objects are NOT dynamic like in JS.
 //         console.log(date);
 //     }
 // };
+
+/* TYPE ALIASES
+The above object instantiation is hard to comprehend and will require lots of repeat typing.
+Instead create a type alias.
+*/
+// type Employee {
+//     readonly id: number,
+//     name: string
+//     retire: (date: Date) => void
+// }
+
+// let employee: Employee = {
+//     id: 1,
+//     name: 'Muffins',
+//     retire: (date:Date) => {console.log(date);}
+// }
+
+/* UNION TYPES
+
+*/
