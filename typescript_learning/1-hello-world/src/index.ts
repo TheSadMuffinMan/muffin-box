@@ -1,3 +1,8 @@
+/*
+Info came from a YouTube video:
+https://www.youtube.com/watch?v=d56mG7DezGs&t=1631s
+*/
+
 // Basic console print:
 // console.log('Hello World.');
 
