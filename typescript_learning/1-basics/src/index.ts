@@ -96,6 +96,7 @@ Objects are NOT dynamic like in JS.
 //     }
 // };
 
+
 /* TYPE ALIASES
 The above object instantiation is hard to comprehend and will require lots of repeat typing.
 Instead create a type alias.
@@ -104,7 +105,7 @@ Instead create a type alias.
 //     readonly id: number,
 //     name: string
 //     retire: (date: Date) => void
-// }
+// };
 
 // let employee: Employee = {
 //     id: 1,
@@ -112,18 +113,35 @@ Instead create a type alias.
 //     retire: (date:Date) => {console.log(date);}
 // }
 
+
 /* UNION TYPES
 Allowing two different types as a parameter.
 */
-function kgToLbs(weight:(number | string)): number {
-    // Narrowing
-    if (typeof weight === `number`) { // Compiler knows `weight` is a number.
-        // weight. shows all the number methods available.
-        return (weight * 2.2);
-    }
-    else {
-        // weight. shows all string methods available.
-        return (parseInt(weight) * 2.2);
-    }
-}
-console.log(kgToLbs('25kg'));
+// function kgToLbs(weight:(number | string)): number {
+//     // Narrowing
+//     if (typeof weight === `number`) { // Compiler knows `weight` is a number.
+//         // weight. shows all the number methods available.
+//         return (weight * 2.2);
+//     }
+//     else {
+//         // weight. shows all string methods available.
+//         return (parseInt(weight) * 2.2);
+//     }
+// }
+// console.log(kgToLbs('25kg'));
+
+
+/* INTERSECTION TYPES
+Allows for data or a function parameter to be two data types simultaneously.
+*/
+type Draggable = {
+    drag: () => void
+};
+type Resizable = {
+    resize: () => void
+};
+type UIWidget = Draggable & Resizable;
+let textBox: UIWidge = {
+    drag: () => {},
+    resize: () => {}
+};
