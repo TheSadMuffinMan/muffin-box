@@ -8,7 +8,7 @@ Compile with: `tsc`
 "Run" JS with: `node dist/index.js`
 
 The TS compiler is *smart*; it will heavily optimize your resultant JS code.
-TS Compiler options: npm tsc --init
+TS Compiler options: npx tsc --init
 */
 
 
