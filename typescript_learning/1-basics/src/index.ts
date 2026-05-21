@@ -134,14 +134,19 @@ Allowing two different types as a parameter.
 /* INTERSECTION TYPES
 Allows for data or a function parameter to be two data types simultaneously.
 */
-type Draggable = {
-    drag: () => void
-};
-type Resizable = {
-    resize: () => void
-};
-type UIWidget = Draggable & Resizable;
-let textBox: UIWidge = {
-    drag: () => {},
-    resize: () => {}
-};
+// type Draggable = {
+//     drag: () => void
+// };
+// type Resizable = {
+//     resize: () => void
+// };
+// type UIWidget = Draggable & Resizable;
+// let textBox: UIWidge = {
+//     drag: () => {},
+//     resize: () => {}
+// };
+
+
+/* LITERAL TYPES
+Left off here.
+*/
